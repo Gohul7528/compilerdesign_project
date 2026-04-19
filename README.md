@@ -1,35 +1,24 @@
-# Compiler Design Project
+# Compiler Design Practice Project
 
-This project implements 6 compiler design topics:
+This project contains Python examples for compiler construction topics.
 
-1. Lexical Analyzer
-2. First and Follow Sets
-3. Left Recursion Removal
-4. NFA to DFA Conversion
-5. Parsing Table Construction
-6. Regex to NFA Conversion
+## Files
 
-## How to Run
+- `06_predictive_parsing.py` - Predictive / LL(1) parsing and FIRST/FOLLOW computation
+- `07_shift_reduce.py` - Shift-reduce parser demonstration
+- `08_leading_trailing.py` - LEADING and TRAILING set computation
+- `09_lr0_items.py` - LR(0) item construction and GOTO example
+- `10_postfix_prefix.py` - Infix to postfix and prefix conversion
+- `11_quad_triple.py` - Quadruple, triple, and indirect triple generation
+- `12_code_generator.py` - Simple pseudo-assembly code generator
+- `13_dag.py` - DAG construction for expression optimization
+- `data_flow.py` - Global data flow analysis example (live variables)
+- `storage_allocation.py` - Stack allocation example
 
-Each topic has its own Python script and input/output files.
+## Usage
 
-- `scripts/lexical_analyzer.py`: Reads `inputs/input_lex.txt`, writes `outputs/output_lex.txt`
-- `scripts/first_follow.py`: Reads `inputs/input_first.txt`, writes `outputs/output_first.txt`
-- `scripts/left_recursion.py`: Reads `inputs/input_left.txt`, writes `outputs/output_left.txt`
-- `scripts/nfa_to_dfa.py`: Reads `inputs/input_nfa.txt`, writes `outputs/output_dfa.txt`
-- `scripts/parsing_table.py`: Reads `inputs/input_table.txt`, writes `outputs/output_table.txt`
-- `scripts/regex_to_nfa.py`: Reads `inputs/input_regex.txt`, writes `outputs/output_nfa.txt`
+Run each file with Python to see example output, for example:
 
-Run each with `python scripts/<script>.py`
-
-## Sample Inputs
-
-- `inputs/input_lex.txt`: `if x = 5 + 3`
-- `inputs/input_first.txt`: `S -> aB | b\nB -> c | dS`
-- `inputs/input_left.txt`: `A -> A b | c`
-- `inputs/input_nfa.txt`: `2\na\n1 -1\n1 -1\n0\n1`
-- `inputs/input_table.txt`: same as `inputs/input_first.txt`
-- `inputs/input_regex.txt`: `a|b`
-
-**GOHUL NANDA**
-RA2311003050027
+```bash
+python 07_shift_reduce.py
+```
